@@ -42,9 +42,9 @@
 						</li>
 					</ul>
 				</nav>
-				<button type="button" class="mobile-menu-open">
+				<button type="button" class="mobile-menu-open" data-menu-open>
 					<svg class="mobile-menu-open-hamburger" width="32" height="22">
-						<use href="./images/sprite/flight.svg"></use>
+						<use href="./images/sprite/icons.svg#icon-charm_menu-hamburger-converted"></use>
 					</svg>
 				</button>
 				<address class="header-address">
@@ -57,6 +57,47 @@
 						</li>
 					</ul>
 				</address>
+			</div>
+			<!-- Menu window -->
+			<div class="mobile-menu" data-menu>
+				<div class="container mobile-menu-container">
+					<button type="button" class="mobile-menu-close-btn" data-menu-close>
+						<svg class="mobile-menu-close-icon" width="8" height="8">
+							<use href="./images/sprite/icons.svg#icon-close"></use>
+						</svg>
+					</button>
+
+					<ul class="social-list list">
+						<li class="social-list-item">
+							<a href="https://www.instagram.com/accounts/login/" class="footer-list-link">
+								<svg class="social-list-icon" width="24" height="24">
+									<use href="./images/sprite/icons.svg#instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-list-item">
+							<a href="https://twitter.com/?lang=uk" class="footer-list-link">
+								<svg class="social-list-icon" width="24" height="24">
+									<use href="./images/sprite/icons.svg#twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-list-item">
+							<a href="https://www.facebook.com/" class="footer-list-link">
+								<svg class="social-list-icon" width="24" height="24">
+									<use href="./images/sprite/icons.svg#facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-list-item">
+							<a href="https://www.linkedin.com/feed/" class="footer-list-link">
+								<svg class="social-list-icon" width="24" height="24">
+									<use href="./images/sprite/icons.svg#linkedin"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</header>
 		<!-- /Header -->
@@ -559,5 +600,6 @@
 		</div> -->
 		<!-- /Modal window -->
 		<!-- <script src="./js/modal.js"></script> -->
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>
