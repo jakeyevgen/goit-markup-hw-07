@@ -47,6 +47,8 @@
     --menu-underline: #404BBF;
     --modal-window-title: #2E2F42;
     --modal-form-main-color: #8E8F99;
+    --mobile-window-social-link: #4D5AE5;
+    --mobile-window-active-social-link: #404BBF;
 }
 
 h1,
@@ -280,6 +282,28 @@ body {
     letter-spacing: 0.02em;
     color: #434455;
 
+}
+
+.mobile-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--mobile-window-social-link);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-list-link:hover,
+.mobile-list-link:focus {
+    background-color: var(--mobile-window-active-social-link);
+}
+
+.mobile-social-list {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 40px;
 }
 
 
