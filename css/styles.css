@@ -190,11 +190,6 @@ body {
     pointer-events: auto;
 }
 
-/* .mobile-menu.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-} */
 
 .mobile-menu-close-btn {
     position: absolute;
