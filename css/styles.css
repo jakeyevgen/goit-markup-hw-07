@@ -178,19 +178,23 @@ body {
         flex-direction: column;
         position: fixed;
         padding-left: 40px;
-        /* align-items: center; */
+        padding-right: 60px;
         width: 100%;
         height: 100%;
-        /* max-height: 796px; */
         background: #FFFFFF;
         top: 0;
         left: 0;
         z-index: 1000;
-        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 1px 6px rgba(46, 47, 66, 0.08);
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+        transform: translateY(-100%);
+        transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .test {
@@ -201,6 +205,7 @@ body {
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
+        transform: translateY(0);
     }
 
     .mobile-menu-close-btn {
@@ -321,7 +326,6 @@ body {
     display: flex;
     justify-content: space-between;
     padding-bottom: 40px;
-    padding-right: 60px;
 }
 
 
@@ -519,7 +523,58 @@ body {
     margin: 0 auto;
 }
 
-.hero-title {
+/* ============ Part for mobile hero ========= */
+@media screen and (max-width:767px) {
+    .hero-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--hero-title-color);
+        margin-bottom: 72px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 320px;
+
+    }
+
+    .background {
+        background-color: #2E2F42;
+        max-width: 100%;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/people-office.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* ============ /Part for mobile hero ========= */
+
+/* ============ Part for tablet hero ========= */
+
+@media screen and (min-width: 768px) {
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--hero-title-color);
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 496px;
+
+    }
+}
+
+
+/* ============ Part for tablet hero ========= */
+
+/* .hero-title {
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -530,7 +585,7 @@ body {
     margin-right: auto;
     max-width: 496px;
 
-}
+} */
 
 
 .modal-btn-font {
@@ -583,6 +638,36 @@ button {
 
 
 /* ============= Advantage section ============= */
+
+/* ============ Part for mobile advantages ========= */
+@media screen and (max-width:767px) {
+    .advantages-titles {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--team-advan-title-color);
+        margin-bottom: 8px;
+    }
+
+    .advantages-title-descr {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--team-advan-descr-color);
+        margin-bottom: 72px;
+    }
+
+    .icon-box {
+        display: none;
+    }
+}
+
+/* ============ /Part for mobile advantages ========= */
 .advantages-main-title {
     display: none
 }
@@ -591,7 +676,7 @@ button {
     padding: 120px 0;
 }
 
-.advantages-titles {
+/* .advantages-titles {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -605,9 +690,9 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--team-advan-descr-color);
-}
+} */
 
-.advant-exp {
+/* .advant-exp {
     display: flex;
     flex-wrap: wrap;
     margin-left: calc(-1 * var(--advant-card-left-gap));
@@ -618,13 +703,13 @@ button {
     flex-basis: calc(100% / 4 - var(--advant-card-left-gap));
     margin-left: var(--advant-card-left-gap);
     margin-top: var(--advant-card-top-gap);
-}
+} */
 
 .advant-card-content {
     display: block;
 }
 
-.icon-box {
+/* .icon-box {
     display: flex;
     width: 264px;
     height: 112px;
@@ -633,7 +718,7 @@ button {
     margin-bottom: 8px;
     justify-content: center;
     align-items: center;
-}
+} */
 
 
 
