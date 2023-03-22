@@ -49,6 +49,8 @@
     --modal-form-main-color: #8E8F99;
     --mobile-window-social-link: #4D5AE5;
     --mobile-window-active-social-link: #404BBF;
+    --advant-card-tablet-left-gap: 24px;
+    --advant-card-tablet-top-gap: 72px;
 }
 
 h1,
@@ -668,6 +670,95 @@ button {
 }
 
 /* ============ /Part for mobile advantages ========= */
+
+/* ============ Part for tablet advantages ========= */
+@media screen and (min-width:768px) {
+    .advantages-titles {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: left;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--team-advan-title-color);
+        margin-bottom: 8px;
+    }
+
+    .advantages-title-descr {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--team-advan-descr-color);
+        margin-bottom: 72px;
+    }
+
+    .advant-exp {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: calc(-1 * var(--advant-card-tablet-left-gap));
+        margin-top: calc(-1 * var(--advant-card-tablet-top-gap));
+    }
+
+    .advant-list>.advant-item {
+        flex-basis: calc(100% / 2 - var(--advant-card-tablet-left-gap));
+        margin-left: var(--advant-card-tablet-left-gap);
+        margin-top: var(--advant-card-tablet-top-gap);
+    }
+
+    .icon-box {
+        display: none;
+    }
+}
+
+/* ============ /Part for tablet advantages ========= */
+
+/* ============ Part for desktop advantages =========== */
+
+@media screen and (min-width: 1200px) {
+    .advantages-titles {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--team-advan-title-color);
+    }
+
+    .advantages-title-descr {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--team-advan-descr-color);
+    }
+
+    .advant-exp {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: calc(-1 * var(--advant-card-left-gap));
+        margin-top: calc(-1 * var(--advant-card-top-gap));
+    }
+
+    .advant-list>.advant-item {
+        flex-basis: calc(100% / 4 - var(--advant-card-left-gap));
+        margin-left: var(--advant-card-left-gap);
+        margin-top: var(--advant-card-top-gap);
+    }
+
+    .icon-box {
+        display: flex;
+        width: 264px;
+        height: 112px;
+        background: var(--advant-icons);
+        border-radius: 4px;
+        margin-bottom: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* ============ /Part for desktop advantages =========== */
 .advantages-main-title {
     display: none
 }
@@ -676,51 +767,11 @@ button {
     padding: 120px 0;
 }
 
-/* .advantages-titles {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--team-advan-title-color);
-}
 
-.advantages-title-descr {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--team-advan-descr-color);
-} */
-
-/* .advant-exp {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: calc(-1 * var(--advant-card-left-gap));
-    margin-top: calc(-1 * var(--advant-card-top-gap));
-}
-
-.advant-list>.advant-item {
-    flex-basis: calc(100% / 4 - var(--advant-card-left-gap));
-    margin-left: var(--advant-card-left-gap);
-    margin-top: var(--advant-card-top-gap);
-} */
 
 .advant-card-content {
     display: block;
 }
-
-/* .icon-box {
-    display: flex;
-    width: 264px;
-    height: 112px;
-    background: var(--advant-icons);
-    border-radius: 4px;
-    margin-bottom: 8px;
-    justify-content: center;
-    align-items: center;
-} */
-
-
 
 /* ============= /Advantage section ============= */
 
