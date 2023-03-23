@@ -51,6 +51,11 @@
     --mobile-window-active-social-link: #404BBF;
     --advant-card-tablet-left-gap: 24px;
     --advant-card-tablet-top-gap: 72px;
+    --team-card-desktop-top-gap: 64px;
+    --customers-mobile-left-gap: 16px;
+    --customers-mobile-top-gap: 72px;
+    --customers-tablet-left-gap: 24px;
+    --customers-tablet-top-gap: 72px;
 }
 
 h1,
@@ -843,20 +848,11 @@ button {
 
 /* ============ Part for tablet team ========= */
 @media screen and (min-width: 768px) {
-    /* .team-flex {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 72px;
-    }
-
-    .team-list {
-        margin-bottom: 96px;
-    } */
 
     .team-flex {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         margin-left: calc(-1 * var(--team-card-left-gap));
         margin-top: calc(-1 * var(--team-card-top-gap));
     }
@@ -871,18 +867,28 @@ button {
 
 /* ============ /Part for tablet team ========= */
 
+/* ============ Part for desktop team ========= */
+@media screen and (min-width: 768px) {
+    .team-list>.item-team {
+        flex-basis: calc(100% / 4 - var(--team-card-left-gap));
+        margin-left: var(--team-card-left-gap);
+        margin-top: var(--team-card-desktop-top-gap);
+    }
+
+    .team-flex {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: calc(-1 * var(--team-card-left-gap));
+        margin-top: calc(-1 * var(--team-card-desktop-top-gap));
+    }
+}
+
+/* ============ /Part for desktop team ========= */
+
 .team {
     background: var(--team-back-color);
     padding: 120px 0;
 }
-
-/* .team-flex {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: calc(-1 * var(--team-card-left-gap));
-    margin-top: calc(-1 * var(--team-card-top-gap));
-} */
-
 
 .team-main-title {
     font-weight: 700;
@@ -904,12 +910,6 @@ button {
     margin-bottom: 8px;
     text-align: center;
 }
-
-/* .team-list>.item-team {
-    flex-basis: calc(100% / 4 - var(--team-card-left-gap));
-    margin-left: var(--team-card-left-gap);
-    margin-top: var(--team-card-top-gap);
-} */
 
 .team-title-descr {
     font-weight: 400;
@@ -963,6 +963,98 @@ button {
 
 /* ============= Customers ============= */
 
+/* ============ Part for mobile customer ========= */
+@media screen and (max-width: 767px) {
+    .customer-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: calc(-1 * var(--customers-mobile-left-gap));
+        margin-top: calc(-1 * var(--customers-mobile-top-gap));
+    }
+
+    .customer-card {
+        flex-basis: calc(100% / 2 - var(--customers-mobile-left-gap));
+        margin-left: var(--customers-mobile-left-gap);
+        margin-top: var(--customers-mobile-top-gap);
+    }
+
+    .customer-card>.customers-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: 1px solid var(--customers-icon-outline);
+        border-radius: 4px 4px 4px 4px;
+        width: 100%;
+        height: 88px;
+        fill: var(--customer-list-icon);
+        transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+/* ============ /Part for mobile customer ========= */
+
+/* ============ Part for tablet customer ========= */
+@media screen and (min-width: 767px) {
+    .customer-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: calc(-1 * var(--customers-tablet-left-gap));
+        margin-top: calc(-1 * var(--customers-tablet-top-gap));
+    }
+
+    .customer-card {
+        flex-basis: calc(100% / 3 - var(--customers-tablet-left-gap));
+        margin-left: var(--customers-tablet-left-gap);
+        margin-top: var(--customers-tablet-top-gap);
+    }
+
+    .customer-card>.customers-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: 1px solid var(--customers-icon-outline);
+        border-radius: 4px 4px 4px 4px;
+        width: 168px;
+        height: 88px;
+        fill: var(--customer-list-icon);
+        transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+/* ============ /Part for tablet customer ========= */
+
+/* ============ Part for desktop customer ========= */
+@media screen and (min-width: 1200px) {
+    .customer-flex {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: calc(-1 * var(--team-card-left-gap));
+        margin-top: calc(-1 * var(--team-card-top-gap));
+    }
+
+    .customer-card>.customers-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: 1px solid var(--customers-icon-outline);
+        border-radius: 4px 4px 4px 4px;
+        width: 168px;
+        height: 88px;
+        fill: var(--customer-list-icon);
+        transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .customer-card {
+        flex-basis: calc(100% / 6 - var(--customers-icon-left-gap));
+        margin-left: var(--customers-icon-left-gap);
+        margin-top: var(--customers-icon-top-gap);
+    }
+}
+
+/* ============ /Part for desktop customer ========= */
+
 .customers {
     padding: 120px 0;
 }
@@ -975,31 +1067,6 @@ button {
     letter-spacing: 0.02em;
     color: var(--customers-main-title);
     margin-bottom: 72px;
-}
-
-.customer-flex {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: calc(-1 * var(--team-card-left-gap));
-    margin-top: calc(-1 * var(--team-card-top-gap));
-}
-
-.customer-card>.customers-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline: 1px solid var(--customers-icon-outline);
-    border-radius: 4px 4px 4px 4px;
-    width: 168px;
-    height: 88px;
-    fill: var(--customer-list-icon);
-    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.customer-card {
-    flex-basis: calc(100% / 6 - var(--customers-icon-left-gap));
-    margin-left: var(--customers-icon-left-gap);
-    margin-top: var(--customers-icon-top-gap);
 }
 
 .customers-link:hover,
