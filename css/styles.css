@@ -1112,7 +1112,7 @@ button {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 72px;
+        /* margin-bottom: 72px; */
     }
 
     .footer-social-mobile-media {
@@ -1139,11 +1139,10 @@ button {
         background-color: var(--footer-color);
         padding-left: 16px;
         color: white;
-        /* margin-right: 23px; */
         margin-bottom: 16px;
     }
 
-    .test {
+    .mobile-flex {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1157,14 +1156,47 @@ button {
 
 /* ============ /Part for mobile footer ========= */
 
-/* .footer-text {
+/* ============ Part for tablet customer ========= */
+@media screen and (min-width: 768px) {
+    .footer-tablet-text-social {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-text {
+        width: 264px;
+        margin-right: 24px;
+    }
+
+
+    .footer-input {
+        max-width: 264px;
+        height: 40px;
+        border: 1px solid #FFFFFF;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: var(--footer-color);
+        padding-left: 16px;
+        color: white;
+        margin-right: 23px;
+    }
+
+    .tests {
+        display: block;
+        margin-left: 100px;
+    }
+}
+
+/* ============ /Part for tablet customer ========= */
+
+.footer-text {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--footer-font-color);
-} */
+}
 
 .footer-color {
     background: var(--footer-color);
@@ -1174,7 +1206,7 @@ button {
     padding: 100px 0;
 }
 
-/* .footer-social-media {
+.footer-social-media {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1182,7 +1214,7 @@ button {
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
-} */
+}
 
 /* .footer-link-margin {
     margin-right: 65px;
