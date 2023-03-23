@@ -776,47 +776,112 @@ button {
 /* ============= /Advantage section ============= */
 
 /* ============= Doing section ============= */
-.doing-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--doing-team-font-color);
-    margin-bottom: 72px;
+
+/* ============ Part for mobile doing ========= */
+@media screen and (max-width: 1199px) {
+    .doing {
+        display: none;
+    }
 }
 
-.doing-flex {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: calc(-1 * var(--doing-card-left-gap));
-    margin-top: calc(-1 * var(--doing-card-top-gap));
+/* ============ /Part for mobile doing ========= */
+
+
+/* ============ Part for desktop doing =========== */
+
+@media screen and (min-width: 1200px) {
+
+    .doing-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--doing-team-font-color);
+        margin-bottom: 72px;
+    }
+
+    .doing-flex {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: calc(-1 * var(--doing-card-left-gap));
+        margin-top: calc(-1 * var(--doing-card-top-gap));
+    }
+
+    .doing-list>.doing-item {
+        flex-basis: calc(100% / 3 - var(--doing-card-left-gap));
+        margin-left: var(--doing-card-left-gap);
+        margin-top: var(--doing-card-top-gap);
+    }
+
+    .doing {
+        padding: 0 0 120px;
+    }
 }
 
-.doing-list>.doing-item {
-    flex-basis: calc(100% / 3 - var(--doing-card-left-gap));
-    margin-left: var(--doing-card-left-gap);
-    margin-top: var(--doing-card-top-gap);
-}
-
-.doing {
-    padding: 0 0 120px;
-}
+/* ============ /Part for desktop doing =========== */
 
 /* ============= Team section ============= */
+
+/* ============ Part for mobile team ========= */
+@media screen and (max-width: 767px) {
+
+    .team-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 72px;
+    }
+
+    .team-list {
+        margin-bottom: 96px;
+    }
+}
+
+/* ============ /Part for mobile team ========= */
+
+/* ============ Part for tablet team ========= */
+@media screen and (min-width: 768px) {
+    /* .team-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 72px;
+    }
+
+    .team-list {
+        margin-bottom: 96px;
+    } */
+
+    .team-flex {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: calc(-1 * var(--team-card-left-gap));
+        margin-top: calc(-1 * var(--team-card-top-gap));
+    }
+
+    .team-list>.item-team {
+        flex-basis: calc(100% / 2 - var(--team-card-left-gap));
+        margin-left: var(--team-card-left-gap);
+        margin-top: var(--team-card-top-gap);
+    }
+}
+
+
+/* ============ /Part for tablet team ========= */
 
 .team {
     background: var(--team-back-color);
     padding: 120px 0;
 }
 
-.team-flex {
+/* .team-flex {
     display: flex;
     flex-wrap: wrap;
     margin-left: calc(-1 * var(--team-card-left-gap));
     margin-top: calc(-1 * var(--team-card-top-gap));
-}
+} */
 
 
 .team-main-title {
@@ -840,11 +905,11 @@ button {
     text-align: center;
 }
 
-.team-list>.item-team {
+/* .team-list>.item-team {
     flex-basis: calc(100% / 4 - var(--team-card-left-gap));
     margin-left: var(--team-card-left-gap);
     margin-top: var(--team-card-top-gap);
-}
+} */
 
 .team-title-descr {
     font-weight: 400;
