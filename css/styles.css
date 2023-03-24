@@ -1436,8 +1436,17 @@ button {
     }
 
     .testp {
-        width: 100%;
+        /* max-width: 100%;
+        height: auto;
+        max-height: 100%;
+        object-fit: cover; */
     }
+
+    /* .img-test {
+        max-width: 100%;
+        height: auto;
+    } */
+
 }
 
 /* ============= /Portfolio section for mobile ============= */
@@ -1504,19 +1513,6 @@ button {
     border-bottom: 1px solid #E7E9FC;
     border-left: 1px solid #E7E9FC;
 }
-
-/* .portfolio-flex {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: calc(-1 * var(--portfolio-card-left-gap));
-    margin-top: calc(-1 * var(--portfolio-card-top-gap));
-}
-
-.portfolio-list>.item {
-    flex-basis: calc(100% / 3 - var(--portfolio-card-left-gap));
-    margin-left: var(--portfolio-card-left-gap);
-    margin-top: var(--portfolio-card-top-gap);
-} */
 
 .portfolio-padding {
     padding: 96px 0 120px;
