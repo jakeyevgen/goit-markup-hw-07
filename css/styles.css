@@ -1146,21 +1146,31 @@ button {
         display: flex;
         flex-direction: column;
         align-items: center;
+
     }
 
     .footer-wrapper {
         width: 100%;
     }
 
+    .logo-web-footer {
+        margin-bottom: 16px;
+    }
+
+    .footer-tablet-text-social {
+        margin-bottom: 72px;
+    }
+
 }
 
 /* ============ /Part for mobile footer ========= */
 
-/* ============ Part for tablet customer ========= */
+/* ============ Part for tablet footer ========= */
 @media screen and (min-width: 768px) {
     .footer-tablet-text-social {
         display: flex;
         justify-content: center;
+        margin-bottom: 72px;
     }
 
     .footer-text {
@@ -1170,7 +1180,7 @@ button {
 
 
     .footer-input {
-        max-width: 264px;
+        width: 264px;
         height: 40px;
         border: 1px solid #FFFFFF;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1181,13 +1191,57 @@ button {
         margin-right: 23px;
     }
 
-    .tests {
-        display: block;
-        margin-left: 100px;
+    .logo-web-footer {
+        margin-bottom: 16px;
     }
+
+    .subsribe {
+        margin-left: 108px;
+    }
+
 }
 
-/* ============ /Part for tablet customer ========= */
+/* ============ /Part for tablet footer ========= */
+
+/* ============ Part for desktop footer ========= */
+
+@media screen and (min-width: 1200px) {
+    .footer-link-margin {
+        margin-right: 65px;
+    }
+
+    .subsribe {
+        margin-left: 0;
+    }
+
+    .footer-input {
+        max-width: 255px;
+        height: 40px;
+        border: 1px solid #FFFFFF;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: var(--footer-color);
+        padding-left: 16px;
+        color: white;
+        margin-right: 23px;
+    }
+
+    .foooter-flex {
+        display: flex;
+    }
+
+    .logo-size {
+        width: 264px;
+        margin-right: 120px;
+    }
+
+    .footer-text {
+        margin-right: 120px;
+    }
+
+}
+
+/* ============ /Part for desktop footer ========= */
 
 .footer-text {
     font-style: normal;
@@ -1204,6 +1258,7 @@ button {
 
 .footer {
     padding: 100px 0;
+
 }
 
 .footer-social-media {
@@ -1215,22 +1270,6 @@ button {
     color: #FFFFFF;
     margin-bottom: 16px;
 }
-
-/* .footer-link-margin {
-    margin-right: 65px;
-} */
-
-/* .footer-input {
-    max-width: 255px;
-    height: 40px;
-    border: 1px solid #FFFFFF;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background-color: var(--footer-color);
-    padding-left: 16px;
-    color: white;
-    margin-right: 23px;
-} */
 
 .footer-input:focus {
     outline: #4D5AE5;
@@ -1284,15 +1323,6 @@ button {
     background-image: url("../images/footer/send.png");
     background-repeat: no-repeat;
 }
-
-/* .foooter-flex {
-    display: flex;
-} */
-
-/* .logo-size {
-    width: 264px;
-    margin-right: 120px;
-} */
 
 .footer-list-link {
     display: flex;
