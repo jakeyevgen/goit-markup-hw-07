@@ -1347,6 +1347,54 @@ button {
 
 /* ============= Filter section ============= */
 
+/* ============= Filter section mobile ============ */
+@media screen and (max-width: 767px) {
+    .filter-flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .portfolio-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 12px 24px;
+        background: var(--btn-bg-color);
+        border: 1px solid #E7E9FC;
+        border-radius: 4px;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+/* ============= /Filter section mobile ============ */
+
+/* ============= Filter section tablet & desktop ============ */
+@media screen and (min-width: 768px) {
+    .filter-flex {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+
+    }
+
+
+    .portfolio-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 24px;
+        background: var(--btn-bg-color);
+        border: 1px solid #E7E9FC;
+        border-radius: 4px;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+/* ============= /Filter section tablet & desktop ============ */
+
 .filter {
     display: none;
 }
@@ -1354,27 +1402,6 @@ button {
 .filter-btn {
     margin-bottom: 72px;
 }
-
-.filter-flex {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-
-}
-
-
-.portfolio-btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 24px;
-    background: var(--btn-bg-color);
-    border: 1px solid #E7E9FC;
-    border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 
 .portfolio-btn-font {
     font-weight: 500;
@@ -1399,6 +1426,58 @@ button {
 /* ============= /Filter section ============= */
 
 /* ============= Portfolio section ============= */
+
+/* ============= Portfolio section for mobile ============= */
+@media screen and (max-width: 767px) {
+    .portfolio-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .testp {
+        width: 100%;
+    }
+}
+
+/* ============= /Portfolio section for mobile ============= */
+
+/* ============= Portfolio section for tablet ============= */
+@media screen and (min-width: 768px) {
+    .portfolio-flex {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: calc(-1 * var(--portfolio-card-left-gap));
+        margin-top: calc(-1 * var(--portfolio-card-top-gap));
+    }
+
+    .portfolio-list>.item {
+        flex-basis: calc(100% / 2 - var(--portfolio-card-left-gap));
+        margin-left: var(--portfolio-card-left-gap);
+        margin-top: var(--portfolio-card-top-gap);
+    }
+}
+
+/* ============= /Portfolio section for tablet ============= */
+
+/* ============= Portfolio section for desktop ============= */
+@media screen and (min-width: 1200px) {
+    .portfolio-flex {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: calc(-1 * var(--portfolio-card-left-gap));
+        margin-top: calc(-1 * var(--portfolio-card-top-gap));
+    }
+
+    .portfolio-list>.item {
+        flex-basis: calc(100% / 3 - var(--portfolio-card-left-gap));
+        margin-left: var(--portfolio-card-left-gap);
+        margin-top: var(--portfolio-card-top-gap);
+    }
+}
+
+/* ============= /Portfolio section for desktop ============= */
+
 .secondary-header {
     font-weight: 500;
     font-size: 20px;
@@ -1426,7 +1505,7 @@ button {
     border-left: 1px solid #E7E9FC;
 }
 
-.portfolio-flex {
+/* .portfolio-flex {
     display: flex;
     flex-wrap: wrap;
     margin-left: calc(-1 * var(--portfolio-card-left-gap));
@@ -1437,7 +1516,7 @@ button {
     flex-basis: calc(100% / 3 - var(--portfolio-card-left-gap));
     margin-left: var(--portfolio-card-left-gap);
     margin-top: var(--portfolio-card-top-gap);
-}
+} */
 
 .portfolio-padding {
     padding: 96px 0 120px;

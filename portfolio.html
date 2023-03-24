@@ -30,22 +30,26 @@
 							<use href="./images/sprite/icons.svg#Logo-top"></use>
 						</svg>
 					</a>
-
 					<ul class="menu list">
 						<li class="menu-item">
-							<a class="menu-link link" href="./index.html">Studio</a>
+							<a class="menu-link link studio-underline studio-active" href="./index.html">Studio</a>
 						</li>
 						<li class="menu-item">
-							<a class="menu-link link portfolio-underline portfolio-active" href="portfolio.html">Portfolio</a>
+							<a class="menu-link link" href="portfolio.html">Portfolio</a>
 						</li>
 						<li class="menu-item">
 							<a class="menu-link link" href="">Contacts</a>
 						</li>
 					</ul>
 				</nav>
+				<button class="mobile-menu-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+					<svg class="mobile-menu-open-hamburger" width="32" height="22">
+						<use href="./images/sprite/icons.svg#icon-charm_menu-hamburger-converted"></use>
+					</svg>
+				</button>
 				<address class="header-address">
 					<ul class="list address-flex">
-						<li>
+						<li class="test">
 							<a class="header-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
 						</li>
 						<li>
@@ -54,28 +58,94 @@
 					</ul>
 				</address>
 			</div>
+			<!-- Menu window mobile -->
+			<div class="mobile-menu mobile-menu-backdrop js-menu-container" id="mobile-menu">
+				<button class="mobile-menu-close-btn js-close-menu">
+					<svg class="mobile-menu-close-icon" width="8" height="8">
+						<use href="./images/sprite/icons.svg#icon-close"></use>
+					</svg>
+				</button>
+
+				<nav>
+					<ul class="mobile-menu-list list">
+						<li class="mobile-item">
+							<a class="mobile-menu-link link studio-underline studio-active" href="./index.html">Studio</a>
+						</li>
+						<li class="mobile-item">
+							<a class="mobile-menu-link link" href="portfolio.html">Portfolio</a>
+						</li>
+						<li class="mobile-item">
+							<a class="mobile-menu-link link" href="">Contacts</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="test">
+					<address class="mobile-address">
+						<ul class="list mobile-address-flex">
+							<li>
+								<a class="mobile-header-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+							</li>
+							<li>
+								<a class="mobile-header-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+							</li>
+						</ul>
+					</address>
+
+					<ul class="mobile-social-list list">
+						<li class="social-list-item">
+							<a href="https://www.instagram.com/accounts/login/" class="mobile-list-link">
+								<svg class="social-list-icon" width="24" height="24">
+									<use href="./images/sprite/icons.svg#instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-list-item">
+							<a href="https://twitter.com/?lang=uk" class="mobile-list-link">
+								<svg class="social-list-icon" width="24" height="24">
+									<use href="./images/sprite/icons.svg#twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-list-item">
+							<a href="https://www.facebook.com/" class="mobile-list-link">
+								<svg class="social-list-icon" width="24" height="24">
+									<use href="./images/sprite/icons.svg#facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-list-item">
+							<a href="https://www.linkedin.com/feed/" class="mobile-list-link">
+								<svg class="social-list-icon" width="24" height="24">
+									<use href="./images/sprite/icons.svg#linkedin"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /Menu window mobile -->
 		</header>
 		<!-- /Header -->
 
 		<main>
 			<!-- Filters section -->
-			<!-- <section class="portfolio-padding">
+			<section class="portfolio-padding">
 				<h1 class="filter">Filter</h1>
 				<div class="container">
-					<ul class="list filter-btn filter-flex">
-						<li>
+					<ul class="list filter-btn filter-flex filter-list">
+						<li class="btn-item">
 							<button class="portfolio-btn portfolio-btn-font" type="button"> All </button>
 						</li>
-						<li>
+						<li class="btn-item">
 							<button class="portfolio-btn portfolio-btn-font" type="button"> Web Site </button>
 						</li>
-						<li>
+						<li class="btn-item">
 							<button class="portfolio-btn portfolio-btn-font" type="button"> App </button>
 						</li>
-						<li>
+						<li class="btn-item">
 							<button class="portfolio-btn portfolio-btn-font" type="button"> Design </button>
 						</li>
-						<li>
+						<li class="btn-item">
 							<button class="portfolio-btn portfolio-btn-font" type="button"> Marketing </button>
 						</li>
 					</ul>
@@ -84,7 +154,7 @@
 						<li class="item">
 							<a href="#" class="portfolio-link-decorat">
 								<div class="portfolio-card">
-									<div class="porfolio-thumb">
+									<div class="porfolio-thumb testp">
 										<img class="img" src="./images/portfolio-cash/bankink-min.jpg" alt="Banking application" />
 
 										<p class="overlay">
@@ -252,73 +322,83 @@
 						</li>
 					</ul>
 				</div>
-			</section> -->
+			</section>
 			<!-- /Concept -->
 		</main>
 		<!-- Footer -->
-		<!-- <footer class="footer-color footer">
+		<footer class="footer-color footer">
 			<div class="container foooter-flex">
-				<div class="logo-size">
-					<a class="link" href="./index.html">
-						<svg class="logo-web-footer" width="115" height="24px">
-							<use href="./images/sprite/icons.svg#Logo-bottom"></use>
-						</svg>
-					</a>
-					<p class="footer-text">
-						Increase the flow of customers and sales for your business with digital marketing & growth solutions.
-					</p>
-				</div>
-				<div class="footer-link-margin">
-					<p class="footer-social-media">Social media</p>
-					<ul class="social-list list">
-						<li class="social-list-item">
-							<a href="https://www.instagram.com/accounts/login/" class="footer-list-link">
-								<svg class="social-list-icon" width="24" height="24">
-									<use href="./images/sprite/icons.svg#instagram"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social-list-item">
-							<a href="https://twitter.com/?lang=uk" class="footer-list-link">
-								<svg class="social-list-icon" width="24" height="24">
-									<use href="./images/sprite/icons.svg#twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social-list-item">
-							<a href="https://www.facebook.com/" class="footer-list-link">
-								<svg class="social-list-icon" width="24" height="24">
-									<use href="./images/sprite/icons.svg#facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social-list-item">
-							<a href="https://www.linkedin.com/feed/" class="footer-list-link">
-								<svg class="social-list-icon" width="24" height="24">
-									<use href="./images/sprite/icons.svg#linkedin"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
+				<div class="footer-tablet-text-social">
+					<div class="logo-size-mobile-footer">
+						<a class="link" href="./index.html">
+							<svg class="logo-web-footer" width="115" height="24px">
+								<use href="./images/sprite/icons.svg#Logo-bottom"></use>
+							</svg>
+						</a>
+						<p class="footer-text">
+							Increase the flow of customers and sales for your business with digital marketing & growth solutions.
+						</p>
+					</div>
+					<div class="footer-link-margin footer-mobile-social-center">
+						<p class="footer-social-media footer-social-mobile-media">Social media</p>
+						<ul class="social-list list">
+							<li class="social-list-item">
+								<a href="https://www.instagram.com/accounts/login/" class="footer-list-link">
+									<svg class="social-list-icon" width="24" height="24">
+										<use href="./images/sprite/icons.svg#instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-list-item">
+								<a href="https://twitter.com/?lang=uk" class="footer-list-link">
+									<svg class="social-list-icon" width="24" height="24">
+										<use href="./images/sprite/icons.svg#twitter"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-list-item">
+								<a href="https://www.facebook.com/" class="footer-list-link">
+									<svg class="social-list-icon" width="24" height="24">
+										<use href="./images/sprite/icons.svg#facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-list-item">
+								<a href="https://www.linkedin.com/feed/" class="footer-list-link">
+									<svg class="social-list-icon" width="24" height="24">
+										<use href="./images/sprite/icons.svg#linkedin"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 				<form class="subsribe">
-					<label for="footer-email" class="footer-input-block">
-						<p class="footer-social-media">Subscribe</p>
-						<span class="footer-wrapper">
-							<input
-								type="text"
-								id="footer-email"
-								name="footer-email"
-								class="footer-input"
-								required
-								placeholder="E-mail"
-							/>
-						</span>
-						<button type="submit" class="footer-form-submit">Subscribe</button>
-					</label>
+						<label for="footer-email" class="footer-input-block mobile-flex">
+							<p class="footer-social-media">Subscribe</p>
+							<span class="footer-wrapper">
+								<input
+									type="text"
+									id="footer-email"
+									name="footer-email"
+									class="footer-input"
+									required
+									placeholder="E-mail"
+								/>
+							</span>
+							<button type="submit" class="footer-form-submit">Subscribe</button>
+						</label>
 				</form>
+				</div>
 			</div>
-		</footer> -->
+		</footer>
 		<!-- Footer -->
+				<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
+		<script defer src="js/mobile-menu.js"></script>
 	</body>
 </html>
