@@ -1435,18 +1435,11 @@ button {
         gap: 48px;
     }
 
-    .testp {
-        /* max-width: 100%;
-        height: auto;
-        max-height: 100%;
-        object-fit: cover; */
-    }
+}
 
-    /* .img-test {
-        max-width: 100%;
-        height: auto;
-    } */
-
+.portfolio-flex .img-wrap {
+    width: 100%;
+    height: auto;
 }
 
 /* ============= /Portfolio section for mobile ============= */
@@ -1599,6 +1592,10 @@ button {
 }
 
 /* ========== Modal window for mobile  ============= */
+
+body.no-scroll {
+    overflow: hidden;
+}
 
 .backdrop {
     position: fixed;
