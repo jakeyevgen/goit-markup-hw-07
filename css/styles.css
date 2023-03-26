@@ -550,12 +550,30 @@ body {
     .background {
         background-color: #2E2F42;
         max-width: 100%;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/people-office.jpg");
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/people-office-mobile/Dark-bg-mobile.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .background {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/people-office-mobile/Dark-bg@2x-mobile.jpg');
+        }
+    }
+
+    @media (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+        .background {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/people-office-mobile/Dark-bg@3x-mobile.jpg');
+        }
     }
 }
 
@@ -576,10 +594,74 @@ body {
         max-width: 496px;
 
     }
+
+    .background {
+        background-color: #2E2F42;
+        max-width: 100%;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/people-office-tablet/hero\ image-tablet.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .background {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/people-office-tablet/hero\ image@2x-tablet.jpg');
+        }
+    }
+
+    @media (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+        .background {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/people-office-tablet/hero\ image@3x-tablet.jpg');
+        }
+    }
 }
 
 
-/* ============ Part for tablet hero ========= */
+/* ============ /Part for tablet hero ========= */
+
+/* ============ Part for desktop hero ========= */
+@media screen and (min-width: 1200px) {
+
+    .background {
+        background-color: #2E2F42;
+        max-width: 1440px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/people-office.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .background {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/people-office@2x.jpg');
+        }
+    }
+
+    @media (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+        .background {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/people-office@3x.jpg');
+        }
+    }
+}
+
+/* ============ /Part for desktop hero ========= */
 
 /* .hero-title {
     font-size: 56px;
@@ -628,17 +710,6 @@ body {
 button {
     font-family: inherit;
     cursor: pointer;
-}
-
-.background {
-    background-color: #2E2F42;
-    max-width: 1440px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/people-office.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* ============= /Hero section ============= */
@@ -1592,6 +1663,15 @@ button {
 }
 
 /* ========== Modal window for mobile  ============= */
+
+/* .modal-scrollable {
+    max-height: 80%;
+    overflow-y: scroll;
+} */
+
+/* .modal-scrollable {
+    overflow-y: auto;
+} */
 
 body.no-scroll {
     overflow: hidden;

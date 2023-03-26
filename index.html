@@ -221,7 +221,21 @@
 						<li class="doing-item">
 							<article class="doing-card">
 								<div class="doing-thumb">
-									<img class="img" src="./images/index-doing/img1.jpg" alt="PC" />
+									<img class="img" srcset="./images/index-doing/pc_img/pc_img.jpg 1x,
+									./images/index-doing/pc_img/pc_img@2x.jpg 2x,
+									./images/index-doing/pc_img/pc_img@3x.jpg 3x"
+									src="./images/index-doing/pc_img/pc_img.jpg" alt="PC" />
+								</div>
+						</article>
+						</li>
+
+						<li class="doing-item">
+							<article class="doing-card">
+								<div class="doing-thumb">
+									<img class="img" srcset="./images/index-doing/phone_img/phone_img.jpg 1x,
+									./images/index-doing/phone_img/phone_img@2x.jpg 2x,
+									./images/index-doing/phone_img/phone_img@3x.jpg 3x"
+									src="./images/index-doing/phone_img/phone_img.jpg" alt="Phone" />
 								</div>
 							</article>
 						</li>
@@ -229,15 +243,10 @@
 						<li class="doing-item">
 							<article class="doing-card">
 								<div class="doing-thumb">
-									<img class="img" src="./images/index-doing/img2.jpg" alt="Phone" />
-								</div>
-							</article>
-						</li>
-
-						<li class="doing-item">
-							<article class="doing-card">
-								<div class="doing-thumb">
-									<img class="img" src="./images/index-doing/img3.jpg" alt="Phone in hand" />
+									<img class="img" srcset="./images/index-doing/phone_pc_img/phone_pc_img.jpg 1x,
+									./images/index-doing/phone_pc_img/phone_pc_img@2x.jpg 2x,
+									./images/index-doing/phone_pc_img/phone_pc_img@3x.jpg 3x"
+									src="./images/index-doing/phone_pc_img/phone_pc_img.jpg" alt="Phone in hand" />
 								</div>
 							</article>
 						</li>
@@ -255,7 +264,10 @@
 						<li class="item-team">
 							<article class="team-card">
 								<div class="team-thumb">
-									<img class="img" src="./images/index-team/mark_guerrero.jpg" alt="Mark Guerrero" />
+									<img class="img" srcset="./images/index-team/mark_guerrero/img.jpg 1x,
+									./images/index-team/mark_guerrero/img@2x.jpg 2x,
+									./images/index-team/mark_guerrero/img@3x.jpg 3x" 
+									src="./images/index-team/mark_guerrero/img.jpg" alt="Mark Guerrero" />
 								</div>
 								<div class="team-content">
 									<h3 class="team-title">Mark Guerrero</h3>
@@ -297,7 +309,10 @@
 						<li class="item-team">
 							<article class="team-card">
 								<div class="team-thumb">
-									<img class="img" src="./images/index-team/tom_ford.jpg" alt="Tom Ford" />
+									<img class="img" srcset="./images/index-team/tom_ford/img.jpg 1x,
+									./images/index-team/tom_ford/img@2x.jpg 2x,
+									./images/index-team/tom_ford/img@3x.jpg 3x"
+									src="./images/index-team/tom_ford/img.jpg" alt="Tom Ford" />
 								</div>
 								<div class="team-content">
 									<h3 class="team-title">Tom Ford</h3>
@@ -339,7 +354,10 @@
 						<li class="item-team">
 							<article class="team-card">
 								<div class="team-thumb">
-									<img class="img" src="./images/index-team/camila_garcia.jpg" alt="Camila Garcia" />
+									<img class="img" srcset="./images/index-team/camila_garcia/img.jpg 1x,
+									./images/index-team/camila_garcia/img@2x.jpg 2x,
+									./images/index-team/camila_garcia/img@3x.jpg 3x"
+									src="./images/index-team/camila_garcia/img.jpg" alt="Camila Garcia" />
 								</div>
 								<div class="team-content">
 									<h3 class="team-title">Camila Garcia</h3>
@@ -381,7 +399,10 @@
 						<li class="item-team">
 							<article class="team-card">
 								<div class="team-thumb">
-									<img class="img" src="./images/index-team/daniel_wilson.jpg" alt="Daniel Wilson" />
+									<img class="img" srcset="./images/index-team/daniel_wilson/img.jpg 1x,
+									./images/index-team/daniel_wilson/img@2x.jpg 2x,
+									./images/index-team/daniel_wilson/img@3x.jpg 3x"
+									src="./images/index-team/daniel_wilson/img.jpg" alt="Daniel Wilson" />
 								</div>
 								<div class="team-content">
 									<h3 class="team-title">Daniel Wilson</h3>
@@ -557,7 +578,7 @@
 				</button>
 				<p class="modal-window-title">Leave your contacts and we will call you back</p>
 
-				<form class="modal-form">
+				<form class="modal-form modal-content">
 					<label class="modal-form-field">
 						<span class="modal-form-input-desc"> Name </span>
 						<span class="modal-form-input-wrapper">
@@ -629,6 +650,8 @@
 		<!-- /Modal window -->
 		<script src="./js/modal.js"></script>
 		<!-- <script src="./js/mobile-menu.js"></script> -->
+		<!-- <script>window.addEventListener('orientationchange', toggleModal);
+</script> -->
 		<script
 			defer
 			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
