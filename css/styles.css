@@ -22,7 +22,7 @@
     --portfolio-card-left-gap: 24px;
     --portfolio-card-top-gap: 48px;
     --team-card-left-gap: 24px;
-    --team-card-top-gap: 24px;
+    --team-card-top-gap: 64px;
     --doing-card-left-gap: 24px;
     --doing-card-top-gap: 24px;
     --advant-card-left-gap: 24px;
@@ -148,6 +148,7 @@ body {
 /* ===== Header for index and portfolio section ============= */
 
 /* ============ Part for mobile header ========= */
+
 @media screen and (max-width: 767px) {
     .menu {
         display: none;
@@ -530,13 +531,6 @@ body {
 /* ============= /Header section ============= */
 
 /* ============= Hero section ============= */
-.hero {
-    /* background: var(--hero-color); */
-    padding: 188px 0;
-    /* margin-top: 4px; */
-}
-
-
 .btn-center {
     display: block;
     margin: 0 auto;
@@ -544,6 +538,11 @@ body {
 
 /* ============ Part for mobile hero ========= */
 @media screen and (max-width:767px) {
+
+    .hero {
+        padding: 112px 0;
+    }
+
     .hero-title {
         font-weight: 700;
         font-size: 36px;
@@ -556,7 +555,6 @@ body {
         margin-left: auto;
         margin-right: auto;
         max-width: 320px;
-
     }
 
     .background {
@@ -594,6 +592,11 @@ body {
 /* ============ Part for tablet hero ========= */
 
 @media screen and (min-width: 768px) {
+
+    .hero {
+        padding: 188px 0;
+    }
+
     .hero-title {
         font-size: 56px;
         line-height: 1.07;
@@ -674,21 +677,6 @@ body {
 }
 
 /* ============ /Part for desktop hero ========= */
-
-/* .hero-title {
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: var(--hero-title-color);
-    margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 496px;
-
-} */
-
-
 .modal-btn-font {
     font-weight: 500;
     font-size: 16px;
@@ -731,6 +719,11 @@ button {
 
 /* ============ Part for mobile advantages ========= */
 @media screen and (max-width:767px) {
+
+    .advantages {
+        padding: 96px 0;
+    }
+
     .advantages-titles {
         font-weight: 700;
         font-size: 36px;
@@ -743,6 +736,7 @@ button {
     }
 
     .advantages-title-descr {
+        content: '';
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -755,12 +749,21 @@ button {
     .icon-box {
         display: none;
     }
+
+    .ttest {
+        margin-bottom: 0;
+    }
 }
 
 /* ============ /Part for mobile advantages ========= */
 
 /* ============ Part for tablet advantages ========= */
 @media screen and (min-width:768px) {
+
+    .advantages {
+        padding: 96px 0;
+    }
+
     .advantages-titles {
         font-weight: 700;
         font-size: 36px;
@@ -779,7 +782,6 @@ button {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--team-advan-descr-color);
-        margin-bottom: 72px;
     }
 
     .advant-exp {
@@ -805,6 +807,11 @@ button {
 /* ============ Part for desktop advantages =========== */
 
 @media screen and (min-width: 1200px) {
+
+    .advantages {
+        padding: 120px 0;
+    }
+
     .advantages-titles {
         font-weight: 500;
         font-size: 20px;
@@ -850,12 +857,6 @@ button {
 .advantages-main-title {
     display: none
 }
-
-.advantages {
-    padding: 120px 0;
-}
-
-
 
 .advant-card-content {
     display: block;
@@ -915,6 +916,11 @@ button {
 /* ============ Part for mobile team ========= */
 @media screen and (max-width: 767px) {
 
+    .team {
+        background: var(--team-back-color);
+        padding: 96px 0;
+    }
+
     .team-flex {
         display: flex;
         flex-wrap: wrap;
@@ -922,15 +928,22 @@ button {
         gap: 72px;
     }
 
-    .team-list {
-        margin-bottom: 96px;
-    }
 }
 
 /* ============ /Part for mobile team ========= */
 
 /* ============ Part for tablet team ========= */
 @media screen and (min-width: 768px) {
+
+    .team-flex .img-team-wrap {
+        width: 100%;
+        height: auto;
+    }
+
+    .team {
+        background: var(--team-back-color);
+        padding: 96px 0;
+    }
 
     .team-flex {
         display: flex;
@@ -951,7 +964,13 @@ button {
 /* ============ /Part for tablet team ========= */
 
 /* ============ Part for desktop team ========= */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+
+    .team {
+        background: var(--team-back-color);
+        padding: 120px 0;
+    }
+
     .team-list>.item-team {
         flex-basis: calc(100% / 4 - var(--team-card-left-gap));
         margin-left: var(--team-card-left-gap);
@@ -967,11 +986,6 @@ button {
 }
 
 /* ============ /Part for desktop team ========= */
-
-.team {
-    background: var(--team-back-color);
-    padding: 120px 0;
-}
 
 .team-main-title {
     font-weight: 700;
@@ -1048,6 +1062,11 @@ button {
 
 /* ============ Part for mobile customer ========= */
 @media screen and (max-width: 767px) {
+
+    .customers {
+        padding: 96px 0;
+    }
+
     .customer-flex {
         display: flex;
         flex-wrap: wrap;
@@ -1079,6 +1098,11 @@ button {
 
 /* ============ Part for tablet customer ========= */
 @media screen and (min-width: 767px) {
+
+    .customers {
+        padding: 96px 0;
+    }
+
     .customer-flex {
         display: flex;
         flex-wrap: wrap;
@@ -1113,11 +1137,16 @@ button {
 
 /* ============ Part for desktop customer ========= */
 @media screen and (min-width: 1200px) {
+
+    .customers {
+        padding: 120px 0;
+    }
+
     .customer-flex {
         display: flex;
         flex-wrap: wrap;
-        margin-left: calc(-1 * var(--team-card-left-gap));
-        margin-top: calc(-1 * var(--team-card-top-gap));
+        margin-left: calc(-1 * var(--customers-icon-left-gap));
+        margin-top: calc(-1 * var(--customers-icon-top-gap));
         padding-left: 0;
         padding-right: 0;
     }
@@ -1142,11 +1171,6 @@ button {
 }
 
 /* ============ /Part for desktop customer ========= */
-
-.customers {
-    padding: 120px 0;
-}
-
 .customers-main-title {
     font-weight: 700;
     font-size: 36px;
